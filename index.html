@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Capstone</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <section>
@@ -11,18 +12,35 @@
                 <h1 class="application"> The Eatery </h1>
                 <form>
                     <input type="text" placeholder="Search for recipes...">
+                    <ion-icon name="search-outline"></ion-icon>
                 </form>
+                <br>
                 <figure>
                     <h2 class="health-shots"> Health Shots </h2>
-                    <div class="search-result-healthshots">
+                    <div class="search-result">
                         <div class="item">
                             <img src="./assets/health-shots/lemon-ginger-cayenne-shot.jpg" alt="Immune Boosting Ginger with Cayenne Shot">
                             <figcaption>Immune Boosting Ginger with Cayenne Shot</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
+                                <div class="pop-up-container">
+                                    <div class="pop-up">
+                                        <i class="fa-solid fa-x"></i>
+                                        <div class="pop-up-inner">
+                                            <div class="left">
+                                                <div class="meal-card">
+                                                    <div class="meal-card-img-container">
+                                                        <img src="./assets/health-shots/lemon-ginger-cayenne-shot.jpg" alt="Immune Boosting Ginger with Cayenne Shot">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <br>
@@ -31,9 +49,9 @@
                             <figcaption>Pineapple Turmeric Gut Shot</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                             </div>
                         </div>
                         <br>
@@ -42,9 +60,9 @@
                             <figcaption>Pineapple Orange Probiotic Shot</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                             </div>
                         </div>
                         <br>
@@ -53,9 +71,9 @@
                             <figcaption>Mango Spinach Energy Shot</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                             </div>
                         </div>
                         <br>
@@ -64,9 +82,9 @@
                             <figcaption>Blood Orange Guava Happy Shot</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                             </div>
                         </div>
                         <br>
@@ -75,24 +93,25 @@
                             <figcaption>Grapfruit Aronia Berry Beauty Shot</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                             </div>
                         </div>
                     </div>
                 </figure>
+                <br>
                 <figure>
                     <h2 class="breakfast"> Breakfast </h2>
-                    <div class="search-result-breakfast">
+                    <div class="search-result">
                         <div class="item">
                             <img src="./assets/breakfast/vegetable-frittata.jpg" alt="Veggie Frittata">
                             <figcaption>Veggie Frittata</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -101,9 +120,9 @@
                         <figcaption>Peanut Butter Parfait</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                     </div>
                 </div>
                 <br>
@@ -112,9 +131,9 @@
                         <figcaption>Avocado Breakfast Burrito</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                     </div>
                 </div>
                 <br>
@@ -123,9 +142,9 @@
                         <figcaption>Chia Seed Pudding</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                     </div>
                 </div>
                 <br>
@@ -134,9 +153,9 @@
                         <figcaption>Crepes</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                     </div>
                 </div>
                 <br>
@@ -145,23 +164,24 @@
                         <figcaption>Chicken and Waffles</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                     </div>
                 </div>
                 </figure>
+                <br>
                 <figure>
                 <h2 class="lunch/dinner"> Lunch/Dinner </h2>
-                <div class="search-result-lunch/dinner">
+                <div class="search-result">
                     <div class="item">
                         <img src="./assets/lunch:dinner/spicy-honey-lime-salmon.jpeg" alt="Spicy Honey Lime Salmon">
                         <figcaption>Spicy Honey Lime Salmon</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -170,9 +190,9 @@
                         <figcaption>Lasagna</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -181,9 +201,9 @@
                         <figcaption>Crunchwrap Supreme</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -192,9 +212,9 @@
                         <figcaption>Marinara Sauce with Ground Beef</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">View Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">View Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -203,9 +223,9 @@
                         <figcaption>Kimchi Fried Rice</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -214,9 +234,9 @@
                         <figcaption>Firecracker Shrimp</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-recipe" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -225,9 +245,9 @@
                         <figcaption>Alfredo Bake</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -236,9 +256,9 @@
                         <figcaption>Mango Chicken</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                     <br>
@@ -247,23 +267,24 @@
                         <figcaption>Yaki Udon</figcaption>
                         <br>
                         <div class="flex-container">
-                            <a href="link">View Recipe</a>
+                            <a class="view-recipe" href="link">Recipe</a>
                             <br>
-                            <a href="link">View Nutritional Facts</a>
+                            <a class="view-facts" href="link">Nutritional Facts</a>
                         </div>
                     </div>
                 </figure>
+                <br>
                 <figure>
                     <h2 class="desserts"> Desserts </h2>
-                    <div class="search-result-desserts">
+                    <div class="search-result">
                         <div class="item">
                             <img src="./assets/desserts/tiramisu.jpg" alt="Tiramisu">
                             <figcaption>Tiramisu</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                             </div>
                         </div>
                         <br>
@@ -272,9 +293,9 @@
                             <figcaption>Oreo Dirt Pudding</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                             </div>
                         </div>
                         <br>
@@ -283,23 +304,24 @@
                             <figcaption>Apple Pie</figcaption>
                             <br>
                             <div class="flex-container">
-                                <a href="link">View Recipe</a>
+                                <a class="view-recipe" href="link">Recipe</a>
                                 <br>
-                                <a href="link">View Nutritional Facts</a>
+                                <a class="view-facts" href="link">Nutritional Facts</a>
                             </div>
                         </div>
                     </figure>
+                    <br>
                     <figure>
                         <h2 class="mocktails"> Mocktails </h2>
-                        <div class="search-result-desserts">
+                        <div class="search-result">
                             <div class="item">
                                 <img src="./assets/mocktails/shirley-temple.jpg" alt="Shirley Temple">
                                 <figcaption>Shirley Temple</figcaption>
                                 <br>
                                 <div class="flex-container">
-                                    <a href="link">View Recipe</a>
+                                    <a class="view-recipe" href="link">Recipe</a>
                                     <br>
-                                    <a href="link">View Nutritional Facts</a>
+                                    <a class="view-facts" href="link">Nutritional Facts</a>
                                 </div>
                             </div>
                             <br>
@@ -308,9 +330,9 @@
                                 <figcaption>Sangria</figcaption>
                                 <br>
                                 <div class="flex-container">
-                                    <a href="link">View Recipe</a>
+                                    <a class="view-recipe" href="link">Recipe</a>
                                     <br>
-                                    <a href="link">View Nutritional Facts</a>
+                                    <a class="view-facts" href="link">Nutritional Facts</a>
                                 </div>
                             </div>
                             <br>
@@ -319,9 +341,9 @@
                                 <figcaption>Orange Moscow Mule</figcaption>
                                 <br>
                                 <div class="flex-container">
-                                    <a href="link">View Recipe</a>
+                                    <a class="view-recipe" href="link">Recipe</a>
                                     <br>
-                                    <a href="link">View Nutritional Facts</a>
+                                    <a class="view-facts" href="link">Nutritional Facts</a>
                                 </div>
                             </div>
                             <br>
@@ -330,9 +352,9 @@
                                 <figcaption>Watermelon Lime</figcaption>
                                 <br>
                                 <div class="flex-container">
-                                    <a href="link">View Recipe</a>
+                                    <a class="view-recipe" href="link">Recipe</a>
                                     <br>
-                                    <a href="link">View Nutritional Facts</a>
+                                    <a class="view-facts" href="link">Nutritional Facts</a>
                                 </div>
                             </div>
                             <br>
@@ -341,9 +363,9 @@
                                 <figcaption>Spicy Grapefruit Ginger Fizz</figcaption>
                                 <br>
                                 <div class="flex-container">
-                                    <a href="link">View Recipe</a>
+                                    <a class="view-recipe" href="link">Recipe</a>
                                     <br>
-                                    <a href="link">View Nutritional Facts</a>
+                                    <a class="view-facts" href="link">Nutritional Facts</a>
                                 </div>
                             </div>
                             <br>
@@ -352,14 +374,16 @@
                                 <figcaption>Cucumber Gimlet</figcaption>
                                 <br>
                                 <div class="flex-container">
-                                    <a href="link">View Recipe</a>
+                                    <a class="view-recipe" href="link">Recipe</a>
                                     <br>
-                                    <a href="link">View Nutritional Facts</a>
+                                    <a class="view-facts" href="link">Nutritional Facts</a>
                                 </div>
                             </div>
                         </figure>
                 </div>
             </div>
         </section>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./index.js"></script>
     </body>
-</html>
