@@ -15,107 +15,189 @@ html{
     font-size: 15px;
 }
 
-section{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0;
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
     background-color: white;
 }
 
-.container{
-    width: 90%;
-    height: auto;
-    max-width: 1200px;
-    margin: 0 auto;
+html::-webkit-scrollbar-thumb{
+    background-color: gold;
+}
+
+li, button{
+    font-family: fantasy;
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navigation-bar{
+    list-style: none;
+}
+
+.navigation-bar li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navigation-bar li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navigation-bar li a:hover{
+    color: gold;
+}
+
+button{
+    padding: 9px;
+    background-color: gold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+
+button:hover{
+    background-color: rgb(247, 222, 79);
 }
 
 .application{
     text-align: center;
     font-size: 4rem;
     color: black;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-form{
-    width: 90%;
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: aliceblue;
-    border-radius: 4px;
+section{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-form input{
-    width: 90%;
-    background-color: transparent;
-    font-family: fantasy;
-    padding: 10px;
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    display: inline-block;
-}
-
-form ion-icon{
-    width: 9%;
-    font-size: 1.5rem;
-    margin: -9px;
-}
-
-.search-result{
-    margin-top: 50px;
-    width: 100%;
-    display: grid;
-    grid-gap: 25px;
-    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.item{
-    width: 100%;
-    border-radius: 8px;
-    background-color: lightgray;
-    padding: 15px;
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
-.item img{
-    width: 100%;
-    height: 300px;
-    border-radius: 4px;
-}
-
-.item .flex-container{
+.slides{
+    width: 500%;
+    height: 500px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.item figcaption{
-    color: black;
-    margin: 20px 10px 0 0;
-    font-size: 1.5rem;
-    font-weight: 400;
+.slides input{
+    display: none;
 }
 
-.view-recipe{
-    text-decoration: none;
-    text-align: center;
-    width: 130px;
-    padding: 10px 0;
-    background-color: rgb(226, 226, 193);
-    color: black;
-    align-self: flex-start;
+.slide{
+    width: 20%;
+    transition: 2s;
 }
 
-.view-facts{
-    text-decoration: none;
-    text-align: center;
-    width: 130px;
-    padding: 10px 0;
-    background-color: rgb(226, 226, 193);
-    color: black;
-    align-self: flex-start;
+.slide img{
+    width: 800px;
+    height: 500px;
 }
+
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid gold;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: gold;
+}
+
+#radio1:checked ~ .one{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .one{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .one{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .one{
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid gold;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: gold;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: gold;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: gold;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: gold;
+}
+
 
